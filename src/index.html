@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  
+</head>
+<body class="bg-cream">
+  <main class="flex min-h-screen justify-center items-center" >
+    <article class="bg-white h-[auto] w-[325px]  custom:w-[500px] custom:flex">
+      <header class=" w-full custom:w-1/2 " >
+        <figure class="h-full" >
+          <img src="../images/image-product-mobile.jpg" alt="image-mobile" class="block custom:hidden w-full h-full">
+          <img src="../images/image-product-desktop.jpg" alt="image-desktop" class="hidden custom:block w-full h-full">
+        </figure>
+      </header>
+      <section class="p-4 w-full custom:w-1/2">
+          <p class="font-montserrat font-[500] text-[9px] tracking-[0.25em]">PERFUME</p>
+          <h1 class="font-fraunces font-[700] text-[30px] leading-[1.9rem] mt-2" >Gabrielle Essence Eau De Parfum</h1>
+          <p class="font-montserrat font-[500] text-[14px] mt-2 mb-4" >A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            Perfumer-Creator for the House of CHANEL.</p>
+          <div class="flex items-center gap-3">
+            <p class="text-darkcyan text-[25px] font-bold font-fraunces font-[700] ">$149.99</p>
+            <p class="line-through text-[12px]">$169.99</p>
+          </div>
+          <div class="flex justify-center items-center gap-3 bg-darkcyan rounded-lg h-10 mt-4">
+            <img src="../images/icon-cart.svg"  class="w-4 h-4">
+            <p class="pt-2 pb-2  text-white text-[12px]">Add to Cart</p>
+          </div>
+          
+      </section>
+    </article>
+  </main>
+</body>
+</html>
